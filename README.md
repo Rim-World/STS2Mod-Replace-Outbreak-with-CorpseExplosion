@@ -1,0 +1,1 @@
+# STS2Mod-Replace-Outbreak-with-CorpseExplosion
