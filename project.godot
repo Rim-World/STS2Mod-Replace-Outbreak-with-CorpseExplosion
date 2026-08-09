@@ -1,0 +1,17 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="CorpseExplosionReplacementMod"
+config/features=PackedStringArray("4.5", "C#")
+config/icon="res://CorpseExplosionReplacementMod/mod_image.png"
+
+[dotnet]
+
+project/assembly_name="CorpseExplosionReplacementMod"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.09, 0.12, 0.12, 1)

@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "시체 폭발",
+  "RE_CORPSE_EXPLOSION.description": "[gold]중독[/gold]을 {PoisonPower:diff()} 부여합니다.\n적이 죽을 경우 적 전체에게 대상의 최대 체력만큼 피해를 줍니다."
+}

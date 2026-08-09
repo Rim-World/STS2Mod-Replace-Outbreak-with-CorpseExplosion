@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "Patlayan Ceset",
+  "RE_CORPSE_EXPLOSION_POWER.description": "Bu düşman ölünce TÜM düşmanlara Maksimum CP'si kadar hasar ver.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:plural:Bu düşman ölünce TÜM düşmanlara Maksimum CP'si kadar hasar ver.|Bu düşman ölünce TÜM düşmanlara Maksimum CP'sinin [blue]{}[/blue] katı hasar ver.}"
+}

@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Eksplozja zwłok",
+  "RE_CORPSE_EXPLOSION.description": "Nałóż {PoisonPower:diff()} pkt. [gold]Trucizny[/gold].\nGdy cel zginie zadaj obrażenia równe jego maks. PŻ WSZYSTKIM przeciwnikom."
+}

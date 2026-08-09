@@ -1,0 +1,12 @@
+{
+  "id": "CorpseExplosionReplacementMod",
+  "name": "尸爆术替换（Corpse Explosion）（beta）",
+  "author": "CorpseExplosionReplacementMod",
+  "description": "将静默猎手的“毒性爆发”（Outbreak）整卡替换为杀戮尖塔1的“尸爆术”（Corpse Explosion）：2 费单体技能、施毒 6/9 + 尸爆标记，目标死亡时对全体敌人造成最大生命值伤害，含 STS1 卡图、Buff 图标与 15 语言文本。本模组要求游戏版本不低于 0.110.0；低于该版本（例如 default 107）不会加载，也不会生效。",
+  "version": "1.0",
+  "has_pck": true,
+  "has_dll": true,
+  "min_game_version": "0.110.0",
+  "dependencies": [],
+  "affects_gameplay": true
+}

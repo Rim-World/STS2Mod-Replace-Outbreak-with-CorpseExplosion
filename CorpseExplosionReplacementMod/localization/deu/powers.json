@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "Leichenexplosion",
+  "RE_CORPSE_EXPLOSION_POWER.description": "Sobald dieser Gegner stirbt, füge ALLEN Gegnern Schaden in Höhe seiner max. TP zu.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:plural:Sobald dieser Gegner stirbt, füge ALLEN Gegnern Schaden in Höhe seiner max. TP zu.|Sobald dieser Gegner stirbt, füge ALLEN Gegnern Schaden in Höhe [blue]{}[/blue] mal seiner max. TP zu.}"
+}

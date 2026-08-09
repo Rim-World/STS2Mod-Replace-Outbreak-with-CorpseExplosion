@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "尸爆术",
+  "RE_CORPSE_EXPLOSION_POWER.description": "当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:choose:当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。|当这名敌人死亡时，对所有敌人造成等于其最大生命值 [blue]{}[/blue] 倍的伤害。}"
+}

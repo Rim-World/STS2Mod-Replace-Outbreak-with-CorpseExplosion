@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "Corpse Explosion",
+  "RE_CORPSE_EXPLOSION_POWER.description": "On death, deal damage equal to its Max HP to ALL enemies.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:plural:On death, deal damage equal to its Max HP to ALL enemies.|On death, deal damage equal to its Max HP [blue]{}[/blue] times to ALL enemies.}"
+}

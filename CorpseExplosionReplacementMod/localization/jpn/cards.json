@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "死体爆発",
+  "RE_CORPSE_EXPLOSION.description": "[gold]毒[/gold]{PoisonPower:diff()}を与える。\n対象の敵が死亡すると、\nその最大HPに等しいダメージを敵全体に与える。"
+}

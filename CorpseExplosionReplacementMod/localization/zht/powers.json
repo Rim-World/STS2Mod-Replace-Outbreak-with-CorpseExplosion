@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "屍爆術",
+  "RE_CORPSE_EXPLOSION_POWER.description": "當這名敵人死亡時，對所有敵人造成等於其最大生命值的傷害。",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:choose:當這名敵人死亡時，對所有敵人造成等於其最大生命值的傷害。|當這名敵人死亡時，對所有敵人造成等於其最大生命值 [blue]{}[/blue] 倍的傷害。}"
+}

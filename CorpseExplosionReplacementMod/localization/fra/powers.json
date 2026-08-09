@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "Explosion morbide",
+  "RE_CORPSE_EXPLOSION_POWER.description": "À la mort de cet ennemi, infligez autant de dégâts que ses PV max à TOUS les ennemis.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:plural:À la mort de cet ennemi, infligez autant de dégâts que ses PV max à TOUS les ennemis.|À la mort de cet ennemi, infligez autant de dégâts que [blue]{}[/blue] fois ses PV max à TOUS les ennemis.}"
+}

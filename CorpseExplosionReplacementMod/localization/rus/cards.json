@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Взрыв трупа",
+  "RE_CORPSE_EXPLOSION.description": "Накладывает {PoisonPower:diff()} [gold]Яда[/gold].\nНанесёт ВСЕМ врагам урон, равный Макс. ОЗ выбранного врага, когда он погибнет."
+}

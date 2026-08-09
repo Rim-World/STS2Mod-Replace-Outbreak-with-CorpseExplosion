@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Corpse Explosion",
+  "RE_CORPSE_EXPLOSION.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold].\nWhen the enemy dies, deal damage equal to its Max HP to ALL enemies."
+}

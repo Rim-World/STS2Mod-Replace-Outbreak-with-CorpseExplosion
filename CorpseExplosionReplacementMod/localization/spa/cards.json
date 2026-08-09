@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Explosión de Cadáver",
+  "RE_CORPSE_EXPLOSION.description": "Aplica {PoisonPower:diff()} de [gold]Veneno[/gold].\nCuando el enemigo muere, hace daño a TODOS los enemigos por un valor igual a sus PV Máximos."
+}

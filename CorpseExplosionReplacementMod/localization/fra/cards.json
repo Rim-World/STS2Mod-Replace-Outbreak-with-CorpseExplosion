@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Explosion morbide",
+  "RE_CORPSE_EXPLOSION.description": "Appliquez {PoisonPower:diff()} [gold]Poison[/gold].\nQuand cet ennemi meurt, infligez autant de dégâts que ses PV max à TOUS les ennemis."
+}

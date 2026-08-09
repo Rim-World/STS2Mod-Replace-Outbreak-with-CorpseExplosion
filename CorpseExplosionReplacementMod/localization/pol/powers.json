@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "Eksplozja zwłok",
+  "RE_CORPSE_EXPLOSION_POWER.description": "Gdy ten przeciwnik zginie, zadaj obrażenia równe jego maksymalnym PŻ WSZYSTKIM przeciwnikom.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:plural:Gdy ten przeciwnik zginie, zadaj obrażenia równe jego maksymalnym PŻ WSZYSTKIM przeciwnikom.|Gdy ten przeciwnik zginie, zadaj obrażenia równe [blue]{}[/blue]-krotności jego maksymalnych punktów życia WSZYSTKIM przeciwnikom.}"
+}

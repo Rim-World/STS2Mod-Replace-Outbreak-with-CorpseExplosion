@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "死体爆発",
+  "RE_CORPSE_EXPLOSION_POWER.description": "死亡すると、その最大HPに等しいダメージを敵全体に与える。",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:choose(1):死亡すると、その最大HPに等しいダメージを敵全体に与える。|死亡すると、その最大HPの [blue]{}[/blue] 倍に等しいダメージを敵全体に与える。}"
+}

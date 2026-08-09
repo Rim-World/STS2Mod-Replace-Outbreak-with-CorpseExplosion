@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Leichenexplosion",
+  "RE_CORPSE_EXPLOSION.description": "Wende {PoisonPower:diff()} [gold]Gift[/gold] an.\nSobald dieser Gegner stirbt, erleiden ALLE Gegner Schaden in Höhe seiner max. TP."
+}

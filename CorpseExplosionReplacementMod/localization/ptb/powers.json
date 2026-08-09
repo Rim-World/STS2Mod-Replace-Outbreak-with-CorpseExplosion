@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "Explosão de Cadáveres",
+  "RE_CORPSE_EXPLOSION_POWER.description": "Ao morrer, causa dano igual ao seu PV máximo para TODOS os inimigos.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:plural:Ao morrer, causa dano igual ao seu PV máximo para TODOS os inimigos.|Ao morrer, causa dano igual ao seu PV máximo [blue]{}[/blue] vezes para TODOS os inimigos.}"
+}

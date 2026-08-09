@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Patlayan Ceset",
+  "RE_CORPSE_EXPLOSION.description": "{PoisonPower:diff()} [gold]Zehir[/gold] uygula.\nO düşman öldüğünde TÜM düşmanlara ölen düşmanın Maksimum CP'si kadar hasar ver."
+}

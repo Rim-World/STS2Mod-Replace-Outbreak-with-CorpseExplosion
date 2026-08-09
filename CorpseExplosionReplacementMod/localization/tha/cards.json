@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "ศพระเบิด",
+  "RE_CORPSE_EXPLOSION.description": "เพิ่มผล {PoisonPower:diff()} [gold]พิษ[/gold]\nเมื่อศัตรูตาย สร้างความเสียหาย ใส่ศัตรูทั้งหมด ตาม HP สูงสุดของตัวที่ตาย"
+}

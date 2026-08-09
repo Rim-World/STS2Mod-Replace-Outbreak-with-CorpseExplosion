@@ -1,0 +1,5 @@
+{
+  "RE_CORPSE_EXPLOSION_POWER.title": "시체 폭발",
+  "RE_CORPSE_EXPLOSION_POWER.description": "적이 죽게 될 경우, 적 전체에게 해당 적의 최대 체력만큼의 피해를 줍니다.",
+  "RE_CORPSE_EXPLOSION_POWER.smartDescription": "{Amount:choose(1):적이 죽게 될 경우, 적 전체에게 해당 적의 최대 체력만큼의 피해를 줍니다.|적이 죽게 될 경우, 적 전체에게 해당 적의 최대 체력 [blue]{}[/blue] 배 만큼의 피해를 줍니다.}"
+}

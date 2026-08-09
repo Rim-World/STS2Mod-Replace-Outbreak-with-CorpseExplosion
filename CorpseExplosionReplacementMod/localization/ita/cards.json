@@ -1,0 +1,4 @@
+{
+  "RE_CORPSE_EXPLOSION.title": "Cadavere Bomba",
+  "RE_CORPSE_EXPLOSION.description": "Applica {PoisonPower:diff()} [gold]veleno[/gold] ad un nemico.\nQuando muore infliggi i suoi PV massimi a TUTTI i nemici."
+}
