@@ -42,8 +42,6 @@
 
 但本 mod 不保证与盗版、修改版、移动版、老旧版本或者冷门 mod、次级 mod 的兼容性。
 
-当你开启本 mod，且有一把正在进行中的游戏未结束就切换/升级游戏版本时，小概率可能导致正在进行中的那一把游戏无法正常读取，只能放弃。
-
 ## ⑥ 鸣谢
 
 本 mod 使用 Codex（桌面版）+ DeepSeek V4 Flash（0731 正式版）完成，感谢梁圣。
@@ -94,8 +92,6 @@ for other characters, in most runs, Corpse Explosion is significantly stronger t
 This mod is written with minimal dependencies, so under normal circumstances it is compatible with most mods and unlikely to break as new Beta versions are released. 
 
 However, compatibility is not guaranteed with pirated copies, modified versions, mobile versions, outdated versions, niche mods, or secondary mods.
-
-If you enable this mod and switch/upgrade the game version while a run is still in progress without finishing it, there is a small chance that the in-progress run may fail to load properly and can only be abandoned.
 
 ## 6. Credits
 
