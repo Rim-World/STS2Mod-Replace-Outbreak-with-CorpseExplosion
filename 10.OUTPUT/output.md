@@ -28,6 +28,7 @@
 ## 说明
 
 - 时间取自源目录中各目录/文件的时间戳；`10.OUTPUT/` 内的副本在整理时统一复制，文件系统时间已刷新为整理时间 2026-11-01。
+- GitHub Release v1.0 上传时的资产名为 `CorpseExplosionReplacementMod.v1.0.zip`，与本地文件名只差分隔符（空格 → 点），内容一致；源码资产名相同。
 - 版本号以对应构建的 `CorpseExplosionReplacementMod.json` 的 `version` 字段为准。
 - 游戏当前安装目录 `C:\Game\Steam\steamapps\common\Slay the Spire 2\mods\CorpseExplosionReplacementMod\` 中的产物为 1.0.0（2026-08-21 构建，`version` 已规范化为 `1.0.0`），未归档到本目录——原始备份见 `03-备份/`。
 - `01-构建产物/` 保留全部历史构建，便于对照问题；确认无用后可自行清理以节省空间（约 12 MB）。
