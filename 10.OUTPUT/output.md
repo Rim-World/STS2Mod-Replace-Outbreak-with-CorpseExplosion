@@ -24,6 +24,8 @@
 | 2026-08-09 22:56 | `02-发布包/CorpseExplosionReplacementModSourceCode.zip` | 1.0 | 5.2 MB | Release 源码资产 |
 | 2026-08-09 22:59 | `02-发布包/CorpseExplosionReplacementMod v1.0.zip` | 1.0 | 1.7 MB | Release 模组资产（DLL/PCK/JSON/PDB） |
 | 2026-08-21 19:41 | `03-备份/CorpseExplosionReplacementMod-20260821/` | 1.0 | 1.8 MB（4 文件） | 图鉴修复前的已安装版本备份，回滚用 |
+| 2026-11-01 20:36 | `02-发布包/CorpseExplosionReplacementMod.v1.0.0.zip` | 1.0.0 | 1.82 MB（4 文件） | 由 `build.ps1` 重新构建；dll 856576 B、pck 978512 B、pdb 19884 B，已替换 GitHub Release v1.0.0 的资产 |
+| 2026-11-01 20:36 | `02-发布包/CorpseExplosionReplacementModSourceCode.zip` | 1.0.0 | 1.95 MB（78 条目） | 同上，源码包；排除 `.godot/`、`bin/`、`obj/` 与二进制产物 |
 
 ## 说明
 
