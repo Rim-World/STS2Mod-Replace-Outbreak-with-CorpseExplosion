@@ -16,7 +16,7 @@
 | 时间 | 文件/目录 | 用途 | 格式 | 大小 | 来源 |
 |---|---|---|---|---|---|
 | 2026-11-01 | `02-缓存与临时/CorpseExplosionReplacementMod-godot/` | Godot 编辑器缓存：导入的 `.ctex`/`.import` 元数据、`mono/temp` 下的 Debug DLL/PDB 与 NuGet 中间文件，共 47 个文件 | 二进制 + 文本（缓存目录） | 3.5 MB | 原合集 `src/CorpseExplosionReplacementMod/.godot/`（整理时从 `9.SRC/` 移出，源码目录不再携带缓存） |
-| 2026-11-01 | `04-历史版本源码/CorpseExplosionReplacementMod-远程v1.0/` | 远端 `origin/main`（2026-08-09，版本 1.0）中被本地 v1.0.0 取代的 4 个文件：`PortraitTextureLoader.cs`、`PowerIconTextureLoader.cs`、`CorpseExplosionReplacementMod.json`、`CorpseExplosionReplacementMod/mod_image.png` | 文本 + PNG | 4.5 MB | `git show origin/main:<path>`（本地 mtime 2026-08-21 优于远端提交时间 2026-08-09，按「新的胜出」替换，旧版本留档溯源） |
+| 2026-11-01 | `04-历史版本源码/CorpseExplosionReplacementMod-远程v1.0/`（**已于 2026-11-01 清理**） | 远端 `origin/main`（2026-08-09，版本 1.0）中被本地 v1.0.0 取代的 4 个文件：`PortraitTextureLoader.cs`、`PowerIconTextureLoader.cs`、`CorpseExplosionReplacementMod.json`、`CorpseExplosionReplacementMod/mod_image.png` | 文本 + PNG | 4.5 MB | `git show origin/main:<path>`（本地 mtime 2026-08-21 优于远端提交时间 2026-08-09，按「新的胜出」替换，旧版本留档溯源） |
 | — | `01-旧Git仓库/` | 空。合集目录内不存在嵌套的旧 `.git`，无需归档 | 目录 | 0 | — |
 | — | `03-运行日志/` | 空。合成阶段未产生独立构建日志 | 目录 | 0 | — |
 
@@ -29,5 +29,5 @@
 
 ## 2026-11-01 清理记录
 
-- `TMP/01-旧Git仓库/` 与 `TMP/02-缓存与临时/` 的内容已全部移入 Windows 回收站。
+- `TMP/01-旧Git仓库/`、`TMP/02-缓存与临时/` 与 `TMP/04-历史版本源码/` 的内容已全部移入 Windows 回收站。
 - 清理依据：远端仓库已完整保留历史，构建缓存可再生；需要回滚时从远端 `git log` 或 `10.OUTPUT/` 取回。
