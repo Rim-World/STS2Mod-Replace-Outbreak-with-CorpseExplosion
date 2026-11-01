@@ -12,6 +12,7 @@
 - 补全 `README.md`、`CHANGELOG.md`、`4.SDD/001-总体设计.md`、各目录索引与 `.gitignore`。
 - 恢复远端仓库根目录的 `README.md`（移入 `9.SRC/CorpseExplosionReplacementMod/README.md`）与 `LICENSE`。
 - 无代码改动。
+- 提交：`7c9efbc`
 
 ## [1.0.0] - 2026-08-21
 
