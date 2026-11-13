@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -8,6 +9,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
@@ -24,31 +26,29 @@ namespace CorpseExplosionReplacementMod;
 public sealed class CorpseExplosionPower : PowerModel
 {
     /// <summary>
-    /// 110+：CreatureCmd.Damage(..., Creature?, CardModel?, CardPlay?) 7 参；
-    /// 107：无 CardPlay 的 6 参版本。其余参数一致，因此运行时按实际存在的重载反射分派，
-    /// 一个 DLL 即可同时适配 107/110，切版本无需重新构建。
+    /// 0.107 / 0.110 / 0.111 / 0.113 都存在 5 参多目标重载：
+    /// (ctx, IEnumerable&lt;Creature&gt;, decimal, ValueProp, Creature)。
+    /// 后续版本在内部转发到更多参数的重载，本 mod 不直接引用那些版本细节。
     /// </summary>
-    private static readonly MethodInfo? DamageSevenArg = typeof(CreatureCmd).GetMethod("Damage", new[]
+    private static readonly MethodInfo? DamageFiveArg = typeof(CreatureCmd).GetMethod("Damage", new[]
     {
         typeof(PlayerChoiceContext), typeof(IEnumerable<Creature>), typeof(decimal),
-        typeof(ValueProp), typeof(Creature), typeof(CardModel), typeof(CardPlay),
-    });
-
-    private static readonly MethodInfo? DamageSixArg = typeof(CreatureCmd).GetMethod("Damage", new[]
-    {
-        typeof(PlayerChoiceContext), typeof(IEnumerable<Creature>), typeof(decimal),
-        typeof(ValueProp), typeof(Creature), typeof(CardModel),
+        typeof(ValueProp), typeof(Creature),
     });
 
     public override PowerType Type => PowerType.Debuff;
 
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public override async Task AfterDeath(
+    /// <summary>
+    /// 由 <see cref="Patches.CorpseExplosionDeathHookPatch"/> 调用。
+    /// 0.113 的 AbstractModel.AfterDeath 增加了 CardModel? source 参数，
+    /// 这里不再用 override，避免基类签名变化导致钩子静默失效。
+    /// </summary>
+    internal async Task ExplodeOnOwnerDeath(
         PlayerChoiceContext choiceContext,
         Creature creature,
-        bool wasRemovalPrevented,
-        float deathAnimLength)
+        bool wasRemovalPrevented)
     {
         // 只响应自身持有者死亡；死亡被阻止（如 Fairy in a Bottle）时不触发爆炸。
         if (wasRemovalPrevented || creature != Owner)
@@ -81,20 +81,23 @@ public sealed class CorpseExplosionPower : PowerModel
         IEnumerable<Creature> targets,
         int damage)
     {
-        if (DamageSevenArg != null)
+        if (DamageFiveArg == null)
         {
-            var task = (Task<IEnumerable<DamageResult>>)DamageSevenArg.Invoke(null, new object?[]
-            {
-                choiceContext, targets, (decimal)damage, ValueProp.Unpowered, null, null, null,
-            })!;
-            await task;
+            Log.Error($"{ModEntry.ModId}: CreatureCmd.Damage 5-arg overload not found; corpse explosion skipped.");
             return;
         }
 
-        var task107 = (Task<IEnumerable<DamageResult>>)DamageSixArg!.Invoke(null, new object?[]
+        try
         {
-            choiceContext, targets, (decimal)damage, ValueProp.Unpowered, null, null,
-        })!;
-        await task107;
+            var task = (Task<IEnumerable<DamageResult>>)DamageFiveArg.Invoke(null, new object?[]
+            {
+                choiceContext, targets, (decimal)damage, ValueProp.Unpowered, null,
+            })!;
+            await task;
+        }
+        catch (Exception e)
+        {
+            Log.Error($"{ModEntry.ModId}: corpse explosion damage failed: {e}");
+        }
     }
 }

@@ -30,6 +30,7 @@ public static class ModEntry
             _harmony = new Harmony(ModId);
             _harmony.PatchAll(Assembly.GetExecutingAssembly());
             Log.Info($"{ModId}: Harmony patches applied (Outbreak -> Corpse Explosion)");
+            Log.Info($"{ModId}: AbstractModel.AfterDeath hook applied");
         }
         catch (Exception e)
         {

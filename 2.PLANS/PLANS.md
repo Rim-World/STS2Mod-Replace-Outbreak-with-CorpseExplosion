@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|
 | 001 | [毒性爆发替换为尸爆术](001-G-毒性爆发替换为尸爆术.md) | G（整体） | 已完成（v1.0.0 已发布，2026-08-09 出 Release；2026-08-21 完成图鉴修复） | 2026-08-06 立项，2026-08-21 收尾 | 从卡牌数据比对、补丁清单、本地化与素材、里程碑到风险与难点的整体计划。原合集文件名 `outbreak-to-corpse-explosion-plan.md`。 |
 | 002 | [图鉴大图空白修复](002-S-图鉴大图空白修复.md) | S（小修复） | 已完成（2026-08-21 构建安装，用户游戏内验证通过） | 2026-08-21 | 修复图鉴大图空白：根因为游戏 v0.111 资源清理 Dispose 了 mod pck 纹理；实施方案 A（加载器自检 + DLL 内嵌兜底）与 B1（`NInspectCardScreen.SetCard` 守护）。原合集文件名 `corpse-explosion-codex-fix-plan.md`。 |
-| 003 | [死亡钩子与 Damage 重载三版本兼容修复](003-S-Damage重载三版本兼容修复.md) | S（小修复） | 待实施 | 2026-11-13 | 为 0.111 / 0.113 共用一份 DLL：0.113 的 `AbstractModel.AfterDeath` 新增 `CardModel? source`，按 0.111 编译的 `override` 失效（爆炸不触发）；改用 `AbstractModel.AfterDeath` 的 Harmony Prefix 承接。同时把 `Damage` 收敛为三版本共有的 5 参重载查找 |
+| 003 | [死亡钩子与 Damage 重载三版本兼容修复](003-S-Damage重载三版本兼容修复.md) | S（小修复） | 已完成（构建、部署、0.113 启动验证；实机待用户） | 2026-11-13 | 为 0.111 / 0.113 共用一份 DLL：0.113 的 `AbstractModel.AfterDeath` 新增 `CardModel? source`，按 0.111 编译的 `override` 失效（爆炸不触发）；改用 `AbstractModel.AfterDeath` 的 Harmony Prefix 承接。同时把 `Damage` 收敛为三版本共有的 5 参重载查找 |
 
 层级含义：G = 整个项目或某个大开发阶段；M = 某个子系统或大模块；S = 某个具体小功能或小修复。
 
@@ -24,6 +24,7 @@
 | 2026-08-09 | 001 | v1.0：整理并发布到 GitHub，创建 Release v1.0 与两个资产 | 通过 |
 | 2026-08-21 | 002 | 实施方案 A + B1：新建 `Patches/OutbreakInspectCardGuardPatch.cs`，改造 `PortraitTextureLoader` / `PowerIconTextureLoader`，manifest 版本号规范化为 `1.0.0` | 通过（用户确认图鉴大图、网格悬停、战斗 buff 图标、主菜单往返均正常） |
 | 2026-11-01 | 001 / 002 | 仓库整理：拆分为独立仓库 `STS2Mod-尸爆`，改为十目录结构，补全文档；源码未改动，v1.0.0 修复随本次整理首次入库 | 待推送到 GitHub 后验收 |
+| 2026-11-13 | 003 | 新增 `CorpseExplosionDeathHookPatch`，删除旧签名 `AfterDeath` override；`Damage` 收敛为 5 参重载并加异常兜底；版本 1.0.1，覆盖安装到本地 `mods/CorpseExplosionReplacementMod` | 构建与 0.113 启动日志验证通过；实机击杀待用户验收 |
 
 ## 后续计划（尚未立项）
 

@@ -1,7 +1,7 @@
 # 三版本兼容修复：死亡钩子与 `Damage` 重载
 
 - 日期：2026-11-13
-- 状态：待实施（已按独立审查修订）
+- 状态：已完成（构建、部署、0.113 启动验证；实机效果待用户验收）
 - 目标版本：v1.0.1
 - 关联：`3.DOCS/004-R-v0.113失效评估.md`
 - 说明：文件名沿用首版计划；内容已扩展到死亡钩子，二者必须一起修。
@@ -141,4 +141,4 @@ private static readonly MethodInfo? DamageFiveArg = typeof(CreatureCmd).GetMetho
 
 | 时间 | 实际施工内容 | 验收状态 |
 |---|---|---|
-| — | — | — |
+| 2026-11-13 09:17 | 新增 `CorpseExplosionDeathHookPatch`；`CorpseExplosionPower` 改为 `ExplodeOnOwnerDeath`；`Damage` 收敛为 5 参查找并加异常兜底；manifest 1.0.0 → 1.0.1；构建覆盖安装到 `mods/CorpseExplosionReplacementMod` | 构建通过；0.113 启动日志出现 hook 应用记录，无异常；实机待用户验收 |

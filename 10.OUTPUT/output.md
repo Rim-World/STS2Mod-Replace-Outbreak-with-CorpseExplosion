@@ -26,6 +26,7 @@
 | 2026-08-21 19:41 | `03-备份/CorpseExplosionReplacementMod-20260821/` | 1.0 | 1.8 MB（4 文件） | 图鉴修复前的已安装版本备份，回滚用 |
 | 2026-11-01 20:36 | `02-发布包/CorpseExplosionReplacementMod.v1.0.0.zip` | 1.0.0 | 1.82 MB（4 文件） | 由 `build.ps1` 重新构建；dll 856576 B、pck 978512 B、pdb 19884 B，已替换 GitHub Release v1.0.0 的资产 |
 | 2026-11-01 20:36 | `02-发布包/CorpseExplosionReplacementModSourceCode.zip` | 1.0.0 | 1.95 MB（78 条目） | 同上，源码包；排除 `.godot/`、`bin/`、`obj/` 与二进制产物 |
+| 2026-11-13 09:17 | `01-构建产物/CorpseExplosionReplacementMod v7（0.113兼容，打包后mod）/` | 1.0.1 | 1.8 MB（dll 857,088 / pck 978,560 / json 723 / pdb 20,128 B） | 0.113 兼容修复构建：死亡钩子 Prefix + 5 参 Damage；同时已覆盖安装到游戏 `mods/CorpseExplosionReplacementMod/`；SHA-256 `31300894…98b445`（DLL）、`6a59c147…91d7ba`（PCK） |
 
 ## 说明
 

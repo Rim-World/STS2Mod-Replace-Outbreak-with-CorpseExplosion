@@ -19,6 +19,8 @@
 | 2026-11-01 | `04-历史版本源码/CorpseExplosionReplacementMod-远程v1.0/`（**已于 2026-11-01 清理**） | 远端 `origin/main`（2026-08-09，版本 1.0）中被本地 v1.0.0 取代的 4 个文件：`PortraitTextureLoader.cs`、`PowerIconTextureLoader.cs`、`CorpseExplosionReplacementMod.json`、`CorpseExplosionReplacementMod/mod_image.png` | 文本 + PNG | 4.5 MB | `git show origin/main:<path>`（本地 mtime 2026-08-21 优于远端提交时间 2026-08-09，按「新的胜出」替换，旧版本留档溯源） |
 | — | `01-旧Git仓库/` | 空。合集目录内不存在嵌套的旧 `.git`，无需归档 | 目录 | 0 | — |
 | — | `03-运行日志/` | 空。合成阶段未产生独立构建日志 | 目录 | 0 | — |
+| 2026-11-13 | `settings-backup-20261113-0915.save` | 修改游戏 `settings.save`（启用三个本地 mod）前的原文件备份 | JSON 文本 | 约 9 KB | 游戏用户配置目录 |
+| 2026-11-13 | `03-运行日志/0.113-startup-verification-20261113.log` | 0.113 启动时三个 mod 的加载、补丁应用与错误筛选记录 | 文本 | 约 2.8 KB | `%APPDATA%/SlayTheSpire2/logs/godot.log` |
 
 ## 清理建议
 

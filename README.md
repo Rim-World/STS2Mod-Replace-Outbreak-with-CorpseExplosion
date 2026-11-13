@@ -4,7 +4,7 @@
 
 Replaces The Silent's "Outbreak" card in Slay the Spire 2 with "Corpse Explosion" from Slay the Spire 1 — same slot, different card.
 
-- 当前版本：`1.0.0`
+- 当前版本：`1.0.1`
 - 模组 ID：`CorpseExplosionReplacementMod`
 - 最低游戏版本：`0.110.0`
 - 开源地址：<https://github.com/Rim-World/STS2Mod-Replace-Outbreak-with-CorpseExplosion>
@@ -74,11 +74,11 @@ cd 9.SRC\CorpseExplosionReplacementMod
 - 立项决策与取舍：[`1.ADR/001-尸爆术替换mod立项.md`](1.ADR/001-尸爆术替换mod立项.md)
 - 图鉴大图空白根因：[`3.DOCS/001-T-图鉴大图空白根因与修复.md`](3.DOCS/001-T-图鉴大图空白根因与修复.md)
 - 15 语言译文与转换规则：[`3.DOCS/003-T-尸爆术15语言译文.md`](3.DOCS/003-T-尸爆术15语言译文.md)
-- 版本日志：[`5.ChangeLog/001-1.0.0-2026-08-21.md`](5.ChangeLog/001-1.0.0-2026-08-21.md)、[`CHANGELOG.md`](CHANGELOG.md)
+- 版本日志：[`5.ChangeLog/001-1.0.0-2026-08-21.md`](5.ChangeLog/001-1.0.0-2026-08-21.md)、[`5.ChangeLog/002-1.0.1-2026-11-13.md`](5.ChangeLog/002-1.0.1-2026-11-13.md)、[`CHANGELOG.md`](CHANGELOG.md)
 
 ## 版本
 
-当前 `1.0.0`（2026-08-21）。历史演进见 `CHANGELOG.md` 与 `5.ChangeLog/`。
+当前 `1.0.1`（2026-11-13）。历史演进见 `CHANGELOG.md` 与 `5.ChangeLog/`。
 
 ## 致谢
 
