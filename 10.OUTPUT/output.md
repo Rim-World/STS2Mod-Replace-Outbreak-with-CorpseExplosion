@@ -35,3 +35,6 @@
 - 版本号以对应构建的 `CorpseExplosionReplacementMod.json` 的 `version` 字段为准。
 - 游戏当前安装目录 `C:\Game\Steam\steamapps\common\Slay the Spire 2\mods\CorpseExplosionReplacementMod\` 中的产物为 1.0.0（2026-08-21 构建，`version` 已规范化为 `1.0.0`），未归档到本目录——原始备份见 `03-备份/`。
 - `01-构建产物/` 保留全部历史构建，便于对照问题；确认无用后可自行清理以节省空间（约 12 MB）。
+| 2026-11-13 10:21 | `02-发布包/CorpseExplosionReplacementMod.v1.0.1.zip` | 1.0.1 | 1.82 MB（1,817,811 B） | GitHub Release v1.0.1 安装包；dll + pck + json + pdb |
+| 2026-11-13 10:21 | `02-发布包/CorpseExplosionReplacementModSourceCode.v1.0.1.zip` | 1.0.1 | 1.95 MB（1,951,322 B） | v1.0.1 源码包；排除 `.godot/`、`bin/`、`obj/` 与二进制产物 |
+| 2026-11-13 10:21 | GitHub Release `v1.0.1` | 1.0.1 | 两个资产 | <https://github.com/Rim-World/STS2Mod-Replace-Outbreak-with-CorpseExplosion/releases/tag/v1.0.1> |
