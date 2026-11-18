@@ -6,6 +6,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <RootNamespace>CorpseExplosionReplacementMod</RootNamespace>
     <AssemblyName>CorpseExplosionReplacementMod</AssemblyName>
+    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
 
     <!-- 本机路径 -->
     <Sts2Path>C:/Game/Steam/steamapps/common/Slay the Spire 2</Sts2Path>

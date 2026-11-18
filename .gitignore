@@ -21,9 +21,12 @@ mono_crash.*.json
 
 # ── 本地运行环境（不入库）──
 10.OUTPUT/*
-!10.OUTPUT/output.md
+!10.OUTPUT/OUTPUT.md
 TMP/*
 !TMP/TMP.md
+!TMP/out-of-project.md
+!TMP/*-临时文件登记.md
+1.PRD/用户prompt/
 PRIVACY/
 
 # ── 发布包 / 压缩件 ──

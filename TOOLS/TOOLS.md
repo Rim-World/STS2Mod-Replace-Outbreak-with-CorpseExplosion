@@ -12,9 +12,17 @@
 |---|---|---|---|---|---|---|
 | — | .NET SDK | 编译 `net9.0` 程序集 | 9.x（具体版本未记录） | 未记录 | Microsoft 官方 | 全局安装，`dotnet build` |
 | — | Godot Engine（mono） | 资源导入与 `--export-pack` 打包 pck | 4.5.1-stable mono win64 | 未记录 | Godot 官方 | 免安装，本机路径 `C:\Godot&GDRE\Godot_v4.5.1-stable_mono_win64\` |
-| — | Slay the Spire 2 本体 | 提供 `sts2.dll`、`0Harmony.dll` 引用与 mods 安装目录 | ≥ 0.110.0（构建时 0.111.0） | 未记录 | Steam | 本机路径 `C:\Game\Steam\steamapps\common\Slay the Spire 2\` |
-| — | Harmony（`0Harmony.dll`） | 运行期方法补丁 | 随游戏分发（版本未记录） | 未记录 | 游戏 `data_sts2_windows_x86_64/` | 由 csproj `Reference` 引用，`Private=false` |
+| — | Slay the Spire 2 本体 | 提供 `sts2.dll`、`0Harmony.dll` 引用与 mods 安装目录 | 0.113.1（2026-11-18 构建时） | 未记录 | Steam | 本机路径 `C:\Game\Steam\steamapps\common\Slay the Spire 2\` |
+| — | Harmony（`0Harmony.dll`） | 运行期方法补丁 | 2.4.2.0（2026-11-18 检查） | 未记录 | 游戏 `data_sts2_windows_x86_64/` | 由 csproj `Reference` 引用，`Private=false` |
 | — | Git / GitHub CLI（`gh`） | 版本管理与 Release 发布 | 未记录 | 未记录 | 官方 | 全局安装；`gh` 已登录 Rim-World 账号 |
+
+## 自写脚本
+
+| 文件 | 用途 |
+|---|---|
+| `scripts/verify-version.ps1` | 校验 manifest、程序集、CHANGELOG 与版本日志的版本号一致性 |
+
+脚本登记详见 `scripts/scripts.md`。
 
 ## 约定
 

@@ -1,0 +1,12 @@
+# Corpse Explosion compatibility scenario (0.113.1), lethal variant
+# Applies Corpse Explosion with 2 stacks to enemy 1, kills enemy 0, and asserts
+# that the 2 x Max HP damage kills the remaining slugs and ends combat.
+
+fight CORPSE_SLUGS_NORMAL
+wait combat-started
+ce_probe
+power CORPSE_EXPLOSION_POWER 2 1
+kill 0
+wait 3
+ce_probe
+ce_check combat-ended

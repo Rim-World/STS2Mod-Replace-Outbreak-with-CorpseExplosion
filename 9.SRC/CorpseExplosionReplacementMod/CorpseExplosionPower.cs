@@ -26,7 +26,7 @@ namespace CorpseExplosionReplacementMod;
 public sealed class CorpseExplosionPower : PowerModel
 {
     /// <summary>
-    /// 0.107 / 0.110 / 0.111 / 0.113 都存在 5 参多目标重载：
+    /// 0.111.1 / 0.113.1 都存在 5 参多目标重载：
     /// (ctx, IEnumerable&lt;Creature&gt;, decimal, ValueProp, Creature)。
     /// 后续版本在内部转发到更多参数的重载，本 mod 不直接引用那些版本细节。
     /// </summary>

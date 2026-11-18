@@ -98,7 +98,7 @@ private static readonly MethodInfo? DamageFiveArg = typeof(CreatureCmd).GetMetho
 | `9.SRC/CorpseExplosionReplacementMod/Patches/CorpseExplosionDeathHookPatch.cs` | 新增死亡钩子 Prefix |
 | `9.SRC/CorpseExplosionReplacementMod/ModEntry.cs` | 追加 hook 应用日志 |
 | `9.SRC/CorpseExplosionReplacementMod/CorpseExplosionReplacementMod.json` | 版本号 1.0.0 → 1.0.1；`min_game_version` 维持 0.110.0 |
-| `5.ChangeLog/`、`CHANGELOG.md` | 记录 v1.0.1 |
+| `7.ChangeLog/`、`CHANGELOG.md` | 记录 v1.0.1 |
 | `3.DOCS/004-R-v0.113失效评估.md` | 补「0.113 实际为钩子失效」的修正说明 |
 
 ## 不做

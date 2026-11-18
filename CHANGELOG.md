@@ -2,17 +2,29 @@
 
 本文件遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 规范，版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
-分版本的详细记录（含开发反馈、技术细节、失败经验、提交编号）见 `5.ChangeLog/`。
+分版本的详细记录（含开发反馈、技术细节、失败经验、提交编号）见 `7.ChangeLog/`。
 
-## [未发布]
+## [1.1.0] - 2026-11-18
+
+### 新增
+
+- `CardModel.BigPortrait` 条件补丁（仅 0.113.1）。
+- 0.113.1 探针场景与 `ce_probe` / `ce_check` 控制台命令（仅测试工件，不进入发布包）。
 
 ### 变更
 
-- 仓库整理为 AGENTS 十目录结构：源码移入 `9.SRC/`，文档按 ADR / PLANS / DOCS / SDD / ChangeLog 分类，构建产物与发布包归入 `10.OUTPUT/`。
-- 补全 `README.md`、`CHANGELOG.md`、`4.SDD/001-总体设计.md`、各目录索引与 `.gitignore`。
-- 恢复远端仓库根目录的 `README.md`（移入 `9.SRC/CorpseExplosionReplacementMod/README.md`）与 `LICENSE`。
-- 无代码改动。
-- 提交：`7c9efbc`
+- 兼容基线收紧为 `0.111.1`（正式版）与 `0.113.1`（beta）；`min_game_version` `0.110.0` → `0.111.1`。
+- manifest / 程序集版本 → `1.1.0`。
+- 文档目录编号对齐新版 `AGENTS.md`。
+
+### 修复
+
+- 0.113.1 图鉴大图使用 `PreloadManager.Cache` 加载 mod PNG 时可能被资源清理影响的问题；现在 `Outbreak.BigPortrait` 直接返回 `PortraitTextureLoader.Get()`。
+
+### 验证
+
+- 0.113.1：无头启动、探针场景、双版本编译检查结果见 `8.TEST/TEST.md`。
+- 0.111.1：仅完成程序集编译检查，实机待用户。
 
 ## [1.0.1] - 2026-11-13
 

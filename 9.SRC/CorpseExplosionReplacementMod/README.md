@@ -2,15 +2,9 @@
 
 本 mod 不依赖任何基础 mod。
 
-本 mod 仅支持 public beta 110 ，不支持 default 107 版本；
+本 mod 仅支持游戏 `0.111.1`（正式版）与 `0.113.1`（beta）。
 
-除非未来default版本将“毒性爆发”效果与beta版同步，否则未来也没有适配default正式版的计划；
-
-但如果未来default版本将“毒性爆发”效果与beta版同步，则理论上不用修改mod即可自动适配default版本。
-
-游戏启动时Mod会通过两种方式检测：检测版本号是否达到0.110.x；检测当前游戏包体内“毒性爆发”卡牌形状是否是技能牌。
-
-两个条件有一个不满足，mod就会自动关闭。
+游戏启动时 Mod 会检测版本号是否达到 `0.111.1`，并检测当前游戏包体内「毒性爆发」卡牌形状是否为技能牌 / 全体目标 / 基础费用 3。任一条件不满足，mod 就会自动关闭。
 
 ## ② 15 种语言支持
 
@@ -53,15 +47,9 @@
 
 This mod does not depend on any base mod.
 
-This mod only supports Public Beta 110 and does not support Default 107.
+This mod supports only game versions `0.111.1` (stable) and `0.113.1` (beta).
 
-Unless the "Outbreak" effect in the Default branch is synced with the Beta branch in the future, there are no plans to support the Default release version.
-
-However, if the "Outbreak" effect in the Default branch is synced with the Beta branch in the future, the mod should automatically work on the Default version without any changes.
-
-On game startup, the mod checks two things: whether the game version is 0.110.x or newer, and whether the "Outbreak" card in the current game build is a Skill card.
-
-If either condition is not met, the mod automatically disables itself.
+On game startup, the mod checks whether the game version is `0.111.1` or newer, and whether the "Outbreak" card in the current build matches Skill / targets all enemies / base cost 3. If either condition is not met, the mod automatically disables itself.
 
 ## 2. 15 Languages Supported
 

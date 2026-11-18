@@ -1,0 +1,15 @@
+# Corpse Explosion compatibility scenario (0.113.1)
+# Starts a standard Ironclad run, jumps to a 3-slug fight, applies the mod power to
+# enemy 1, kills enemy 0, and probes HP before/after. If the death hook works, the
+# other two slugs die from Max HP damage and combat ends.
+
+fight CORPSE_SLUGS_NORMAL
+wait combat-started
+ce_probe
+card OUTBREAK
+ce_probe
+power CORPSE_EXPLOSION_POWER 1 1
+ce_probe
+kill 0
+wait 3
+ce_probe
