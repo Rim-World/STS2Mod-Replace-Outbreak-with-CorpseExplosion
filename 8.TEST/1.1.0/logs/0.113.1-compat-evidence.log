@@ -1,0 +1,39 @@
+# 0.113.1 compatibility evidence (sanitized excerpt)
+# Full logs are kept locally in TMP/1.1.0/test-logs/ because they contain the
+# Steam account ID and local paths. This file contains only test-relevant lines.
+
+## Patch application (final run)
+
+[INFO] Calling initializer method of type CorpseExplosionReplacementMod.ModEntry for CorpseExplosionReplacementMod, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+[INFO] CorpseExplosionReplacementMod: CardModel.BigPortrait patch applied
+[INFO] CorpseExplosionReplacementMod: Harmony patches applied (Outbreak -> Corpse Explosion)
+[INFO] CorpseExplosionReplacementMod: AbstractModel.AfterDeath hook applied
+
+## 1 stack: 26/27 HP survivors lose 25 HP each
+
+[INFO] [CEProbe] card title=尸爆术 cost=2 target=AnyEnemy vars=[PoisonPower=6,CorpseExplosionPower=1]
+[INFO] [CEProbe] combat=in-progress creatures=4 enemies=3
+[INFO] [CEProbe] creature[1] name=噬尸蛞蝓 side=Enemy hp=25/25 alive=True powers=[RAVENOUS_POWER:4]
+[INFO] [CEProbe] creature[2] name=噬尸蛞蝓 side=Enemy hp=26/26 alive=True powers=[RAVENOUS_POWER:4]
+[INFO] [CEProbe] creature[3] name=噬尸蛞蝓 side=Enemy hp=27/27 alive=True powers=[RAVENOUS_POWER:4]
+[INFO] [CEProbe] creature[1] name=噬尸蛞蝓 side=Enemy hp=25/25 alive=True powers=[RAVENOUS_POWER:4,CORPSE_EXPLOSION_POWER:1]
+[INFO] [Scenario] Line 13: kill 0
+[INFO] [CEProbe] combat=in-progress creatures=3 enemies=2
+[INFO] [CEProbe] creature[1] name=噬尸蛞蝓 side=Enemy hp=1/26 alive=True powers=[RAVENOUS_POWER:4,STRENGTH_POWER:4]
+[INFO] [CEProbe] creature[2] name=噬尸蛞蝓 side=Enemy hp=2/27 alive=True powers=[RAVENOUS_POWER:4,STRENGTH_POWER:4]
+[INFO] [Scenario] Scenario completed successfully: corpse-explosion-compat
+
+## 2 stacks: combat ends, BigPortrait valid
+
+[INFO] [CEProbe] card title=尸爆术 cost=2 target=AnyEnemy vars=[PoisonPower=6,CorpseExplosionPower=1]
+[INFO] [CEProbe] bigPortrait valid=True type=CompressedTexture2D
+[INFO] [CEProbe] combat=in-progress creatures=4 enemies=3
+[INFO] [CEProbe] creature[1] name=噬尸蛞蝓 side=Enemy hp=25/25 alive=True powers=[RAVENOUS_POWER:4]
+[INFO] [Scenario] Line 8: power CORPSE_EXPLOSION_POWER 2 1
+[INFO] [Scenario] Line 9: kill 0
+[INFO] [CEProbe] combat=not-in-progress
+[INFO] [CEProbe] bigPortrait valid=True type=CompressedTexture2D
+[INFO] [CEProbe] check expected=combat-ended combat_active=False
+[INFO] [Scenario] Line 12: check passed: combat ended
+[INFO] [Scenario] Scenario completed successfully: corpse-explosion-lethal
+[INFO] [Scenario] Quitting game with exit code 0

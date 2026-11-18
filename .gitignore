@@ -27,6 +27,10 @@ TMP/*
 !TMP/out-of-project.md
 !TMP/*-临时文件登记.md
 1.PRD/用户prompt/
+8.TEST/**/logs/*.engine.log
+8.TEST/**/logs/*.stdout.log
+8.TEST/**/logs/*.stderr.log
+8.TEST/**/logs/*.summary.txt
 PRIVACY/
 
 # ── 发布包 / 压缩件 ──

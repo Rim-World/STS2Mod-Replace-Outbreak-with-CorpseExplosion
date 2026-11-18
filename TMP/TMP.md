@@ -24,9 +24,11 @@
 | `run-lethal-clean-20261118.log` | 2026-11-18 19:21 | 否 | 0.5 | 2 层尸爆场景最终版本的运行摘要 | 是 |
 | `run-lethal-final-20261118.log` | 2026-11-18 19:28 | 否 | 0.5 | 加入 `BigPortrait` 探针后的失败尝试摘要；被其他 mod 的创意工坊更新干扰 | 否 |
 | `run-lethal-final2-20261118.log` | 2026-11-18 19:30 | 否 | 0.5 | 最终成功运行摘要；`BigPortrait valid=True`、2 层尸爆全灭、`ce_check` 通过 | 是 |
+| `test-logs/` | 2026-11-18 19:38 | 否 | 1230 | 从被过滤的提交中恢复的 4 轮完整日志（engine/stdout/stderr/summary）；含 Steam 账号 ID 与本机路径，**不得入库或上传** | 是 |
 
 ## 清理建议
 
 - `ref-111.1/`、`compile-111.1/` 被 `3.DOCS/005-R-0.111.1与0.113.1兼容性检查.md` 引用，保留到 0.111.1 兼容性结论不再需要复核为止。
+- `test-logs/` 含 Steam 账号 ID 与本机绝对路径，已被 `.gitignore` 的 `8.TEST/**/logs/` 与 `TMP/*` 排除；不得打包、上传或粘贴到公开 issue。
 - `1.0.1` 的两份文件只在回滚或对照旧启动日志时使用；三个版本后可清理。
 - 游戏安装目录下的 `mods/CorpseExplosionProbe/` 已在测试后移入回收站；`.sts2-workshop-uploader/` 是上传器长期痕迹，不属于本项目临时文件。
