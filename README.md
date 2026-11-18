@@ -28,8 +28,8 @@ Replaces The Silent's "Outbreak" card in Slay the Spire 2 with "Corpse Explosion
 
 | 游戏版本 | 状态 | 说明 |
 |---|---|---|
-| `0.113.1`（beta） | 支持 | 死亡钩子、5 参 `Damage`、`CardModel.BigPortrait` 均已适配 |
-| `0.111.1`（正式版） | 支持 | 使用同一份 DLL/PCK；实机回归待用户 |
+| `0.113.1`（beta） | 支持 | 死亡钩子、5 参 `Damage`、`CardModel.BigPortrait` 均已适配；用户实机验收通过（2026-11-18） |
+| `0.111.1`（正式版） | 支持 | 使用同一份 DLL/PCK；用户实机验收通过（2026-11-18） |
 | `0.111.0` 及更旧 | 不支持 | `min_game_version = 0.111.1` 由游戏拒绝加载 |
 | `0.114` 及更新 | 未承诺 | 版本变化后需重新检查 API |
 
@@ -116,7 +116,7 @@ Replaces the Silent's "Outbreak" card with "Corpse Explosion" from Slay the Spir
 - Cost 3 → 2, target all enemies → single enemy, poison 9 → 6 (upgrade +3 keeps), "trigger poison immediately" removed, new "Corpse Explosion" debuff: when the target dies, deal damage equal to its Max HP × stacks to all enemies (blockable, unaffected by Strength).
 - Card name, card text, card art, buff icon and buff smart text are replaced in 15 languages.
 - The original `Outbreak` model is modified in place; no new card is created.
-- Supported game versions: `0.111.1` (stable) and `0.113.1` (beta). `min_game_version` is `0.111.1`; older versions are rejected at load time.
+- Supported game versions: `0.111.1` (stable) and `0.113.1` (beta). `min_game_version` is `0.111.1`; older versions are rejected at load time. Both versions passed the user's in-game check on 2026-11-18.
 - 0.113.1's `CardModel.BigPortrait` is patched conditionally; 0.111.1 skips that patch because the property does not exist.
 - `ind` and `ara` are not translated; the game falls back to English.
 - No dependencies. Build with .NET 9 + Godot 4.5.1 mono via `9.SRC/CorpseExplosionReplacementMod/build.ps1`.

@@ -1,0 +1,27 @@
+# User acceptance evidence (sanitized)
+# Source logs: %APPDATA%/SlayTheSpire2/logs/godot2026-11-18T23.22.30.log (0.111.1)
+# and godot.log (0.113.1). Paths, Steam IDs, and unrelated mod errors removed.
+
+## 0.111.1 public branch
+
+[Sentry.NET] release=v0.111.1
+[INFO] CorpseExplosionReplacementMod: loading...
+[INFO] CorpseExplosionReplacementMod: CardModel.BigPortrait not found; optional inspect-portrait patch skipped
+[INFO] CorpseExplosionReplacementMod: Harmony patches applied (Outbreak -> Corpse Explosion)
+[INFO] CorpseExplosionReplacementMod: AbstractModel.AfterDeath hook applied
+[INFO] 尸爆术替换（Corpse Explosion）（beta） [CorpseExplosionReplacementMod] (1.1.0)
+
+## 0.113.1 public-beta branch
+
+[Sentry.NET] release=v0.113.1
+[INFO] CorpseExplosionReplacementMod: loading...
+[INFO] CorpseExplosionReplacementMod: CardModel.BigPortrait patch applied
+[INFO] CorpseExplosionReplacementMod: Harmony patches applied (Outbreak -> Corpse Explosion)
+[INFO] CorpseExplosionReplacementMod: AbstractModel.AfterDeath hook applied
+[INFO] 尸爆术替换（Corpse Explosion）（beta） [CorpseExplosionReplacementMod] (1.1.0)
+
+## Notes
+
+- No ObjectDisposedException, SetCard guard failure, or corpse explosion damage failure in either mod-specific log section.
+- 0.111.1 log contains a branch-support error for the old Steam Workshop copy 1.0.1; the local 1.1.0 loaded and replaced it.
+- Both logs contain unrelated errors from other mods and save-version differences; they are outside this mod's scope.
