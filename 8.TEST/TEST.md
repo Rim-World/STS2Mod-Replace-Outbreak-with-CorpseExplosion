@@ -22,6 +22,7 @@
 | `corpse-explosion-lethal.scenario` | 2026-11-18 19:19 | 否 | 0.3 | 0.113.1 2 层尸爆场景：断言剩余敌人死亡、战斗结束 | 是 |
 | `run-compat.ps1` | 2026-11-18 19:16 | 否 | 3.2 | 检查游戏未运行、部署探针、启动场景、保存日志与退出码 | 是 |
 | `logs/0.113.1-compat-evidence.log` | 2026-11-18 19:38 | 否 | 2.5 | 从完整日志提取的脱敏证据：补丁应用、1 层伤害、2 层致死、`BigPortrait` 有效 | 是 |
+| `logs/0.111.1-0.113.1-user-acceptance.log` | 2026-11-18 23:30 | 否 | 1.5 | 用户双版本实机验收的脱敏日志摘录：0.111.1 跳过 `BigPortrait`，0.113.1 应用补丁；无 mod 异常 | 是 |
 
 ## 本地完整日志（不入库）
 
@@ -44,8 +45,8 @@
 | 0.113.1 1 层尸爆伤害 | 3 只 Corpse Slug，给 25 HP 的 1 号挂 1 层，杀死 1 号 | 通过：存活 26/27 HP 的蛞蝓分别剩 1/2，各损失 25 | `logs/0.113.1-compat-evidence.log` |
 | 0.113.1 2 层尸爆致死 | 同上，挂 2 层 | 通过：剩余敌人全灭，战斗结束，`ce_check combat-ended` 通过 | `logs/0.113.1-compat-evidence.log` |
 | 0.111.1 编译 | `dotnet build -p:Sts2DataDir=TMP/1.1.0/compile-111.1` | 通过：0 警告 0 错误；引用缓存指向 0.111.1 `sts2.dll` | `TMP/1.1.0/build-main-111.1.log`、`TMP/1.1.0/compile-111.1-reference.txt` |
-| 0.111.1 实机 | 用户切正式版 | 未执行 | 需用户按 AC-004 回归 |
-| 0.113.1 图鉴大图 UI | 游戏内打开/翻页/升级勾选 | 未执行 | 无头场景不覆盖 UI 画面 |
+| 0.111.1 实机 | 用户切正式版 | 通过：本地 1.1.0 加载，`BigPortrait` 跳过，钩子应用；用户确认无问题 | `logs/0.111.1-0.113.1-user-acceptance.log` |
+| 0.113.1 实机与图鉴 UI | 用户实机打开/翻页/升级勾选、战斗 | 通过：`BigPortrait patch applied`；用户确认无问题 | `logs/0.111.1-0.113.1-user-acceptance.log` |
 
 ## 测试约定
 

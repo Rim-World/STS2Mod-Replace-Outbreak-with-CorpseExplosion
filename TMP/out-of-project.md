@@ -7,3 +7,5 @@
 | `C:\Game\Steam\steamapps\common\Slay the Spire 2\mods\CorpseExplosionProbe\` | 2026-11-18 19:17 | 是（2026-11-18 19:31 移入回收站） | 11 KB | 0.113.1 场景测试用探针 mod | 否 |
 | `%APPDATA%\SlayTheSpire2\logs\godot.log` | 2026-11-18 19:30 | 否（游戏自行管理） | 194 KB | 场景测试引擎日志；完整副本在 `TMP/1.1.0/test-logs/`，脱敏摘录在 `8.TEST/1.1.0/logs/` | 是 |
 | `%APPDATA%\SlayTheSpire2\steam\<SteamID>\settings.save` | 2026-11-18 19:16 | 否（用户配置） | 未记录 | 游戏设置；测试未改动其内容（修改时间早于测试） | 否 |
+| `%APPDATA%\SlayTheSpire2\logs\godot2026-11-18T23.22.30.log` | 2026-11-18 23:22 | 否（游戏自行管理） | 502 KB | 0.111.1 用户实机日志；副本在 `TMP/1.1.0/test-logs/user-0.111.1-20261118.log` | 是 |
+| `%APPDATA%\SlayTheSpire2\logs\godot.log` | 2026-11-18 23:25 | 否（游戏自行管理） | 163 KB | 0.113.1 用户实机日志；副本在 `TMP/1.1.0/test-logs/user-0.113.1-20261118.log` | 是 |
